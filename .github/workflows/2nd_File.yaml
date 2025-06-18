@@ -1,0 +1,17 @@
+name: Basic Github Actions file for Cowsay
+on: 
+  push:
+jobs:
+  myascii:
+    name: Configuring Cowsay
+    runs-on: ubuntu-latest
+    steps:
+      - name: installing cowsay command
+        run: sudo apt-get install -y cowsay
+      - name: running the command
+        run: cowsay -f dragon " Run for cover, dragon is there" >> dragon.txt
+      - name: reading file
+        run: |
+              cat dragon.txt
+              grep -i dradon dragon.txt
+              ls -latest
