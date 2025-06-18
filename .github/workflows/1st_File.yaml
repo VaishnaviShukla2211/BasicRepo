@@ -8,7 +8,7 @@ jobs:
     runs on: ubuntu-latest
     steps:
       - name: Reading repo files using Actions
-        actions: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: listing the files
         run: ls
       - name: Read the files
