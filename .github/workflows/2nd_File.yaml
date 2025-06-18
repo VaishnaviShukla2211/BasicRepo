@@ -14,4 +14,4 @@ jobs:
         run: |
               cat dragon.txt
               grep -i dragon dragon.txt
-              ls -latest
+              ls -la
