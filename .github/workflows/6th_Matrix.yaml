@@ -1,0 +1,16 @@
+name: Exploring Matrix
+on:
+  push:
+
+jobs:
+  testing:
+    strategy:
+      matrix:
+        os: [ubuntu-latest , windows-latest , ubuntu-22.04]
+        image: [hello-world , debian]
+        exclude:
+        - os: windows-latest
+          image: debian
+    runs-on: "${{ matrix.os}}"
+    steps:
+      - run: docker run  ${{ matrix.image }}
