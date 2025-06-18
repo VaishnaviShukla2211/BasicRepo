@@ -11,7 +11,7 @@ jobs:
         exclude:
         - os: windows-latest
           image: debian
-      max-parallel: 2
+      max-parallel: 3
     runs-on: "${{ matrix.os}}"
     steps:
       - run: docker run  ${{ matrix.image }}
