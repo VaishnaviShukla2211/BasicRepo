@@ -15,7 +15,7 @@ jobs:
       - run: echo docker login --username=${{ vars.DOCKER_USERNAME }} --password= ${{ secrets.DOCKER_PASSWORD }} 
 
   deploy:
-  needs: docker
+    needs: docker
     runs-on: ubuntu-latest
     concurrency: 
       cancel-in-progress: true
