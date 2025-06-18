@@ -1,6 +1,6 @@
 name: Multiple Job in a single workflow
 on:
-  push:
+  workflow_dispatch:
 
 jobs:
   build_job:
