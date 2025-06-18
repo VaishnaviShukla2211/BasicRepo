@@ -1,6 +1,6 @@
 name: Basic Github Actions YAML
 on: 
-  push:
+  workflow_dispatch:
 
 jobs:
   testing:

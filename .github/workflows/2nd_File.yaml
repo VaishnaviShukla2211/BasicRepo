@@ -1,6 +1,6 @@
 name: Basic Github Actions file for Cowsay
 on: 
-  push:
+  workflow_dispatch:
 jobs:
   myascii:
     name: Configuring Cowsay
