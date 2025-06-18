@@ -1,6 +1,6 @@
 name: Exploring step environment variable
 on:
-  push:
+  workflow_dispatch:
 
 jobs:
   docker:
